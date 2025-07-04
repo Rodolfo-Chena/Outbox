@@ -49,4 +49,27 @@ public class Delivery {
     public List<Object> pullDomainEvents() {
         return Collections.unmodifiableList(domainEvents);
     }
+    public DeliveryId getId() {
+    return id;
+}
+
+public RouteId getRoute() {
+    return route;
+}
+
+public DeliveryPersonId getAssignedPerson() {
+    return assignedPerson;
+}
+
+public OrderNumber getOrderNumber() {
+    return relatedOrder;
+}
+
+public Address getDestination() {
+    return destination;
+}
+public LocalDateTime getScheduledAt() {
+    return scheduledAt;
+}
+
 }
