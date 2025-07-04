@@ -27,14 +27,14 @@ public class DeliveryMapper {
         dto.deliveryId = delivery.getId().getValue();
         dto.routeId = delivery.getRoute().getValue();
         dto.deliveryPersonId = delivery.getAssignedPerson().getValue();
-        dto.orderNumber = delivery.getOrderNumber().toString(); // Cambio aquí
+        dto.orderNumber = delivery.getOrderNumber().toString();
         dto.status = delivery.getStatus().name();
         dto.scheduledAt = delivery.getScheduledAt();
 
         DeliveryDto.AddressDto addressDto = new DeliveryDto.AddressDto();
-        addressDto.street = delivery.getDestination().getStreet();  // Cambio aquí
-        addressDto.city = delivery.getDestination().getCity();      // Cambio aquí
-        addressDto.postalCode = delivery.getDestination().getPostalCode();  // Cambio aquí
+        addressDto.street = delivery.getDestination().getStreet();  
+        addressDto.city = delivery.getDestination().getCity();      
+        addressDto.postalCode = delivery.getDestination().getPostalCode();  
         dto.destination = addressDto;
 
         return dto;
