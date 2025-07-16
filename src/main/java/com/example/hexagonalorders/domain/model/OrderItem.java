@@ -3,7 +3,7 @@ package com.example.hexagonalorders.domain.model;
 import com.example.hexagonalorders.domain.model.valueobject.ProductNumber;
 import com.example.hexagonalorders.domain.model.valueobject.Quantity;
 import java.math.BigDecimal;
-import java.util.Objects;
+//import java.util.Objects;
 
 /**
  * Core domain entity representing an OrderItem in the system.
