@@ -31,9 +31,9 @@ public class Order {
     private final List<DomainEvent> domainEvents = new ArrayList<>();
 
     public Order(OrderNumber orderNumber, String customerId, LocalDateTime orderDate, List<OrderItem> items, OrderStatus status) {
-        if (orderNumber == null) {
+     /*   if (orderNumber == null) {
             throw new IllegalArgumentException("Order number cannot be null");
-        }
+        }*/
         if (customerId == null || customerId.trim().isEmpty()) {
             throw new IllegalArgumentException("Customer ID cannot be null or empty");
         }
